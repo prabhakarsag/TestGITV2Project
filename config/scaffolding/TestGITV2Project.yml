@@ -7,3 +7,16 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
   gitBranch: main
+services:
+- serviceName: project.testgitv2.integrations:SIQAAdapterFlow
+  packages:
+  - name: TestGITV2Project
+    version: "1.0"
+- serviceName: project.testgitv2.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: TestGITV2Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1969
