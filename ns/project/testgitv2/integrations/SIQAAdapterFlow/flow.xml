@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.testgitv2.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert" VALIDATE-IN="" VALIDATE-OUT="">
+<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.testgitv2.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert" VALIDATE-IN="" VALIDATE-OUT="" DISABLED="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -147,5 +147,9 @@
 <MAP MODE="OUTPUT">
   <COMMENT></COMMENT>
 </MAP>
+</INVOKE>
+
+<INVOKE NAME="Date" SERVICE="pub.date:getCurrentDate" DISABLED="true">
+  <COMMENT></COMMENT>
 </INVOKE>
 </FLOW>
